@@ -8,6 +8,12 @@ const onRequest = (request, response) => {
   console.log(request.url);
 
   switch (request.url) {
+    case '/bird.mp4':
+      mediaHandler.getBird(request, response);
+      break;
+    case '/page3':
+      htmlHandler.getIndex3(request, response);
+      break;
     case '/bling.mp3':
       mediaHandler.getBling(request, response);
       break;
