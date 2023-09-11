@@ -56,4 +56,12 @@ const getParty = (request, response) => {
   loadFile(request, response, '../client/party.mp4', 'video/mp4');
 };
 
-module.exports = { getParty };
+const getBling = (request, response) => {
+  loadFile(request, response, '../client/bling.mp3', 'audio/mpeg');
+};
+
+const getBird = (request, response) => {
+  loadFile(request, response, '../client/bird.mp4', 'video/mp4');
+};
+
+module.exports = { getParty, getBling, getBird };
