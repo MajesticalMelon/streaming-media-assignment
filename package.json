@@ -4,7 +4,9 @@
   "description": "Streming Mefia HW for IGME-430",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Test Complete\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/MajesticalMelon/streaming-media-assignment/issues"
   },
-  "homepage": "https://github.com/MajesticalMelon/streaming-media-assignment#readme"
+  "homepage": "https://github.com/MajesticalMelon/streaming-media-assignment#readme",
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.28.1"
+  }
 }
